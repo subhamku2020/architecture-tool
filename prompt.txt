@@ -1,0 +1,24 @@
+You are a cloud architect. Based on the user’s request below, design an AWS architecture.
+
+User request:
+- Product type: "E-commerce website"
+- Expected users: "10,000 per day"
+- Region: "us-east-1"
+- Database preference: "PostgreSQL",
+- Other requirements: auto-scaling, high availability, low cost
+
+Return the result in **valid JSON format only** using this structure:
+{
+  "architecture": {
+    "compute": ["..."],
+    "database": ["..."],
+    "storage": ["..."],
+    "messaging": ["..."]
+  },
+  "explanation": {
+    "EC2": "Why it’s used...",
+    "RDS": "Why it’s used..."
+  },
+  "estimated_cost": "$XXX/month"
+}
+No text or commentary outside the JSON.
